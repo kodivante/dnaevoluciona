@@ -2,6 +2,8 @@
 
 ![DNA Rediseño](https://img.shields.io/badge/Estado-Completado-brightgreen?style=for-the-badge) ![Tech Stack](https://img.shields.io/badge/Stack-HTML5%20|%20CSS3%20|%20JSVainilla-blue?style=for-the-badge) ![Metodología](https://img.shields.io/badge/Metodolog%C3%ADa-AI--Driven%20Development-orange?style=for-the-badge) ![Licencia](https://img.shields.io/badge/Propiedad-Prohibida%20su%20venta-red?style=for-the-badge)
 
+🟢 **[Ver Despliegue en Vivo: GitHub Pages](https://kodivante.github.io/dnaevoluciona/)**
+
 Este repositorio contiene el código fuente para el rediseño conceptual y funcional de la Landing Page de **DNA EVOLUCIONA**. Este proyecto nace como un caso práctico de demostración ante la restricción de mostrar los desarrollos reales de mi agencia (sujetos a estrictos acuerdos de confidencialidad y NDA con mis clientes). 
 
 El objetivo principal de este rediseño es fungir como una pieza de portafolio que demuestre dos pilares fundamentales:
