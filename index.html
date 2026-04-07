@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conviértete en distribuidor oficial de DNA EVOLUCIONA. Múltiples beneficios, productos exclusivos y cursos especializados en nutrición y deporte.">
+    <title>DNA EVOLUCIONA | Distribuidor Oficial</title>
+    
+    <!-- Google Fonts: Montserrat para encabezados fuertes y Inter para lectura clara -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:ital,wght@0,700;0,800;0,900;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <!-- Boxicons (para iconos) -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- ==============================================
+         HEADER / BARRA DE NAVEGACIÓN (GLASSMORPHISM)
+         ==============================================
+         - Controlado por CSS en: style.css (Línea ~152 en adelante)
+         - El efecto blur/cristal se aplica mediante JS (main.js L18)
+           que inyecta la clase .scroll-header al hacer scroll vertial.
+    -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <span class="logo-text">DNA<span class="logo-text-small text-neon">EVOLUCIONA</span></span>
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#inicio" class="nav__link active-link">Inicio</a></li>
+                    <li class="nav__item"><a href="#laboratorio" class="nav__link">Laboratorio</a></li>
+                    <li class="nav__item"><a href="#beneficios" class="nav__link">Distribuidores</a></li>
+                    <li class="nav__item"><a href="#cursos" class="nav__link">Cursos</a></li>
+                    <li class="nav__item"><a href="#contacto" class="nav__link btn-outline">Contacto</a></li>
+                </ul>
+            </div>
+
+            <!-- Hamburger Button -->
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!-- ==============================================
+             HERO SECTION (PRIMERA PANTALLA)
+             ==============================================
+             - CSS relacionado: style.css (Línea ~236)
+             - Contiene la imagen de fondo a pantalla completa (height: 100vh)
+             - Usa botones tipo 'Neon' y 'Ghost' documentados en style.css (Línea ~294)
+        -->
+        <section class="hero section" id="inicio">
+            <div class="hero__bg-overlay"></div>
+            <div class="hero__container container grid">
+                <div class="hero__data reveal">
+                    <span class="hero__subtitle">Expande tu potencial</span>
+                    <h1 class="hero__title italic">
+                        CONVIÉRTETE EN <br>
+                        <span class="text-neon">DISTRIBUIDOR</span><br>
+                        OFICIAL DNA
+                    </h1>
+                    <p class="hero__description">
+                        ¡Transforma tu pasión por el fitness en un negocio de éxito! 
+                        Accede a los mejores suplementos deportivos, formación continua, estrategias de marketing y el respaldo de una marca sólida.
+                    </p>
+                    <div class="hero__buttons">
+                        <a href="#contacto" class="button button--neon">Empezar Ahora</a>
+                        <a href="#beneficios" class="button button--ghost">Ver Beneficios <i class='bx bx-right-arrow-alt'></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==============================================
+             SECCIÓN DE ESTADÍSTICAS (PRUEBA SOCIAL)
+             ==============================================
+             - CSS relacionado: style.css (Línea ~351)
+             - Esta tarjeta sube por encima del hero usando margen negativo en CSS.
+             - La clase '.reveal' está controlada por main.js (Línea ~46) para animación al bajar.
+        -->
+        <section class="stats section">
+            <div class="stats__container container grid reveal">
+                <div class="stats__card">
+                    <h3 class="stats__number text-neon">+1000</h3>
+                    <p class="stats__title">Distribuidores Oficiales</p>
+                    <p class="stats__desc">En México y Sudamérica</p>
+                </div>
+                <div class="stats__card">
+                    <h3 class="stats__number text-neon">+400</h3>
+                    <p class="stats__title">Productos Premium</p>
+                    <p class="stats__desc">Disponibles en inventario</p>
+                </div>
+                <div class="stats__card">
+                    <h3 class="stats__number text-neon">100%</h3>
+                    <p class="stats__title">Acompañamiento</p>
+                    <p class="stats__desc">Tutorías y cursos incluidos</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==============================================
+             SECCIÓN DE BENEFICIOS (TARJETAS GLASSMORPHISM)
+             ==============================================
+             - CSS relacionado: style.css (Línea ~386)
+             - El efecto cristal en las tarjetas está en la clase .glass (style.css L~391),
+               usando 'backdrop-filter: blur(16px)' y colores semitransparentes.
+        -->
+        <section class="benefits section" id="beneficios">
+            <div class="container section__header reveal">
+                <h2 class="section__title italic text-neon">NUESTRO ECOSISTEMA</h2>
+                <p class="section__subtitle">Todo lo que necesitas para escalar tu negocio en nutrición deportiva.</p>
+            </div>
+
+            <div class="benefits__container container grid">
+                <!-- Card 1 -->
+                <div class="benefit__card glass reveal">
+                    <div class="benefit__icon">
+                        <i class='bx bx-package'></i>
+                    </div>
+                    <h3 class="benefit__title">Más de 400 Productos</h3>
+                    <p class="benefit__description">Acceso completo a nuestro catálogo premium de suplementación con los mejores estándares.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="benefit__card glass reveal">
+                    <div class="benefit__icon">
+                        <i class='bx bxs-graduation'></i>
+                    </div>
+                    <h3 class="benefit__title">Cursos Únicos</h3>
+                    <p class="benefit__description">Capacitación constante por expertos y certificaciones con valor curricular para tu equipo.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="benefit__card glass reveal">
+                    <div class="benefit__icon">
+                        <i class='bx bx-credit-card-front'></i>
+                    </div>
+                    <h3 class="benefit__title">Plan de Crédito</h3>
+                    <p class="benefit__description">Opciones de financiamiento hechas a medida para ayudarte a iniciar y crecer rápido en tu zona.</p>
+                </div>
+                <!-- Card 4 -->
+                <div class="benefit__card glass reveal">
+                    <div class="benefit__icon">
+                        <i class='bx bx-folder-open'></i>
+                    </div>
+                    <h3 class="benefit__title">Material Exclusivo</h3>
+                    <p class="benefit__description">Recursos de marketing, flyers, banners físicos y diseños listos para tus redes sociales.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==============================================
+             SECCIÓN DE EDUCACIÓN (BANNERS DE IMAGEN CON HOVER)
+             ==============================================
+             - CSS relacionado: style.css (Línea ~421)
+             - Al hacer hover en estas tarjetas, la imagen en posición absoluto realiza 
+               un ligero zoom modificando el '.edu__img' en CSS.
+        -->
+        <section class="education section" id="cursos">
+            <div class="container section__header reveal">
+                <h2 class="section__title text-neon italic">ELEVA TU EXPERIENCIA</h2>
+                <p class="section__subtitle">del deporte, aprende con talleres, cursos o master class de expertos certificados y supera tus propios límites.</p>
+            </div>
+
+            <div class="education__container container grid">
+                
+                <!-- Banner Nutrición -->
+                <div class="edu__banner reveal">
+                    <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&q=80&w=800" alt="Nutrición Inteligente" class="edu__img">
+                    <div class="edu__overlay"></div>
+                    <div class="edu__content">
+                        <h3 class="edu__title">Nutrición Inteligente</h3>
+                        <p class="edu__desc">Descifra cómo funciona la nutrición aplicada a la pérdida de grasa corporal a través de la nutrición deportiva.</p>
+                        <a href="#" class="button button--small button--neon">Leer Más</a>
+                    </div>
+                </div>
+
+                <!-- Banner Competir -->
+                <div class="edu__banner reveal">
+                    <img src="https://images.unsplash.com/photo-1549476464-37392f717541?auto=format&fit=crop&q=80&w=800" alt="Competir con éxito" class="edu__img">
+                    <div class="edu__overlay"></div>
+                    <div class="edu__content">
+                        <h3 class="edu__title">Competir con Éxito</h3>
+                        <p class="edu__desc">Aprende sobre la estructura física, suplementación, farmacología, poses y más con los mejores coach del país.</p>
+                        <a href="#" class="button button--small button--neon">Leer Más</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==============================================
+             SECCIÓN CTA (CALL TO ACTION / EMPRENDE)
+             ==============================================
+             - CSS relacionado: style.css (Línea ~479)
+             - Diseño a 2 columnas usando CSS Grid.
+        -->
+        <section class="cta section">
+            <div class="cta__container container grid reveal">
+                <div class="cta__text-data">
+                    <h2 class="section__title italic text-neon">EMPRENDE TU NEGOCIO</h2>
+                    <p class="cta__description">
+                        Con tan solo $18,000 MXN de inversión inicial, descubre una oportunidad con alto potencial de ganancias y rápido retorno de inversión en la industria que más crece.
+                    </p>
+                    
+                    <ul class="cta__list">
+                        <li><i class='bx bx-check-circle text-neon'></i> Lanza tu propia marca</li>
+                        <li><i class='bx bx-check-circle text-neon'></i> Válido como distribuidor oficial</li>
+                        <li><i class='bx bx-check-circle text-neon'></i> Rentabilidad garantizada de alto margen</li>
+                    </ul>
+
+                    <a href="#contacto" class="button button--neon">Hablar con un Asesor</a>
+                </div>
+                <div class="cta__image-data glass">
+                    <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&q=80&w=1000" alt="Emprende en Fitness" class="cta__img">
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ==============================================
+         FOOTER (PIE DE PÁGINA)
+         ==============================================
+         - CSS relacionado: style.css (Línea ~511)
+    -->
+    <footer class="footer section">
+        <div class="footer__container container">
+            <div class="footer__logo-area">
+                 <h2 class="footer__logo">DNA <span class="text-neon">EVOLUCIONA</span></h2>
+                 <p class="footer__subtitle">El estándar de oro en suplementación deportiva.</p>
+            </div>
+            <p class="footer__copy">&#169; 2026 DNA Evoluciona. Prueba Técnica Kodivante.</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="#" class="whatsapp-float hover-glow">
+        <i class='bx bxl-whatsapp'></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
